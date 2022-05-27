@@ -1,0 +1,129 @@
+:root{
+    --fuente1:'Cookie', cursive;
+    --fuente2:'Kaushan Script', cursive;
+    --fuente3:'Sacramento', cursive;
+    --fuente4: 'Yellowtail', cursive;
+    --fuente5:'Playball', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+#fondo-invitacion {
+    width:400px;
+    height:400px;
+    background:#fafafa;
+    outline:20px solid rgba(224,224,224,0.5);
+    margin-top:30px;
+    position:relative;
+    border:1px solid #ccc;
+} 
+#fondo-in-tapa1 {
+    width:200px;
+    height:400px;
+    background:#ccc;
+    position:absolute;
+    -webkit-transition:1s;
+    -o-transition:1s;
+    transition:1s;
+    float:left;
+    left:0px;
+    opacity:1;
+    margin-top:-150px;
+} 
+#fondo-invitacion:hover #fondo-in-tapa1 {
+    left:-600px;
+    position:relative;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    opacity:0;
+    margin-top:-150px;
+}
+#fondo-in-tapa2 {
+    width:200px;
+    height:400px;
+    background:#000;
+    float:right;
+    -webkit-transition: 1s;
+    -o-transition: 1s;transition: 1s;
+    position:relative;
+    left:0px;
+    opacity:1;
+    margin-top:-150px;
+} 
+#fondo-invitacion:hover #fondo-in-tapa2 {
+    left:650px;
+    position:relative;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    opacity:0;
+    margin-top:-150px;
+} 
+#foto-invitacion {
+    width:200px;
+    height:200px;
+    background:#fafafa;
+    position:relative;
+    border-radius:180px;
+    top:100px;
+    left:0px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    border:10px solid #F1E0F3;
+    margin-top:-150px;
+} 
+#fondo-invitacion:hover #foto-invitacion {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    opacity:1;
+    left:-120px;
+    top:-30px;
+    border:5px solid #E6B4E7;
+    transform: scale(.5);
+} 
+#titulo-invitacion {
+    position:absolute;
+    font-family: 'Pacifico', cursive;
+    font-size:28px;
+    margin-left:160px;
+    margin-top:50px;
+    width:200px;
+    border-bottom:1px solid #fff;
+    line-height:1.5;color:#fff;
+    text-shadow:1px 1px 0px #000;
+} 
+#contenido-invitacion {
+    width:360px;
+    height:210px;
+    margin-top:150px;
+    padding:20px;
+    position:absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size:11px;
+    text-align:justify;
+    overflow:auto;
+} 
+#credito-invitacion {
+    font-family: 'Poppins', sans-serif;
+    font-size:9px;
+    text-transformuppercase;
+    letter-spacing:1px;
+    top:2px;
+    position:relative;
+    left:130px;
+}
+#a_correo:hover{
+    color: #e6b4e7;
+}
+#a_correo:focus{
+    color: #000;
+}
+#p_parrafo{
+    text-align: center;
+    font-size:16px;
+    font-family: var(--fuente1);
+    color: #ab0261;
+}
