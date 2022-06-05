@@ -36,5 +36,19 @@
                 <a id="a_correo" href="mailto:<bodadafneynico@gmail.com>">bodadafneynico@gmail.com</a>
             </div>
     </center>
+    <audio loop id="audioelement">
+    <source src="./audio/yo tambien.mp3" type="audio/ogg">
+    <source src="./audio/yo tambien.mp3" type="audio/mpeg">
+    </audio>
+    <a href="sonido2.html"></a>
 </body>
+
+
+<script>
+    const playSound = function() {
+        document.getElementById('audioelement').play();
+        document.removeEventListener('click', playSound);
+    }
+    document.addEventListener('click', playSound);
+</script>
 </html>
